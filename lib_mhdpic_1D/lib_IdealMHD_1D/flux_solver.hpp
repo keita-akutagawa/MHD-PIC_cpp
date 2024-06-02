@@ -2,7 +2,7 @@
 #include "hlld.hpp"
 
 
-class HLLD;
+using namespace MHD;
 
 class FluxSolver
 {

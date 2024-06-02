@@ -2,6 +2,8 @@
 #include <string>
 
 
+using namespace MHD;
+
 class Boundary
 {
 private:

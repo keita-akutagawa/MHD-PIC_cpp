@@ -3,6 +3,8 @@
 #include "particle_struct.hpp"
 
 
+using namespace PIC; 
+
 class Boundary
 {
 private:

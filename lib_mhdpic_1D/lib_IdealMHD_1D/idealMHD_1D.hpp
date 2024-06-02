@@ -4,6 +4,8 @@
 #include "boundary.hpp"
 
 
+using namespace MHD;
+
 class IdealMHD1D
 {
 private:

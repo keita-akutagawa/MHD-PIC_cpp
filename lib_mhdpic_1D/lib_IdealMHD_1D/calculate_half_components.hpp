@@ -3,6 +3,7 @@
 #include "muscl.hpp"
 
 
+using namespace MHD;
 
 struct Components
 {

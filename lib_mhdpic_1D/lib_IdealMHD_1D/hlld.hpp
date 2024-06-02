@@ -3,8 +3,7 @@
 #include "calculate_half_components.hpp"
 
 
-class CalculateHalfComponents;
-
+using namespace MHD;
 
 struct FanParameters
 {
