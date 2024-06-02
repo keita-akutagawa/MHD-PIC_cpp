@@ -1,12 +1,15 @@
 # MHD-PIC
 
-連結階層シミュレーションのコードです。 \
-IdealMHDとPICを接続領域を用いて繋げます。 \
-1次元は、MHD→PIC・PIC→MHDのfast modeの伝搬に成功しました。 \
+連結階層シミュレーションのコードです。
 
-C++で書かれています。 \
+IdealMHDとPICを接続領域を用いて繋げます。
+
+1次元は、MHD→PIC・PIC→MHDのfast modeの伝搬に成功しました。 
+
+C++で書かれています。
 
 【MEMO】
+
 未完成です。
 
 
