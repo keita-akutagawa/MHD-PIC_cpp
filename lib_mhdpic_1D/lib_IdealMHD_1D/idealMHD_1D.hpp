@@ -1,10 +1,9 @@
 #include <vector>
 #include <string>
+#include "const.hpp"
 #include "flux_solver.hpp"
 #include "boundary.hpp"
 
-
-using namespace MHD;
 
 class IdealMHD1D
 {
@@ -16,11 +15,12 @@ private:
     Boundary boundary;
 
 public:
-    IdealMHD1D();
+    IdealMHD1D() : 
+    U(8, std::vector<double>(MHD::nx, 0.0)),
+    UBar(8, std::vector<double>(MHD::nx, 0.0))
+    {}
 
-    void initializeU(
-        const std::vector<std::vector<double>> UInit
-    ); 
+    virtual void initializeU(); 
 
     void oneStepRK2();
 

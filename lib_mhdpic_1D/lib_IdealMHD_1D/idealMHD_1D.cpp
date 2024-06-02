@@ -4,7 +4,6 @@
 #include <fstream>
 #include <iomanip>
 #include <string>
-#include "const.hpp"
 #include "idealMHD_1D.hpp"
 
 
@@ -14,18 +13,6 @@ IdealMHD1D::IdealMHD1D()
 {
     U = std::vector(8, std::vector<double>(nx, 0.0));
     UBar = std::vector(8, std::vector<double>(nx, 0.0));
-}
-
-
-void IdealMHD1D::initializeU(
-    const std::vector<std::vector<double>> UInit
-)
-{
-    for (int comp = 0; comp < 8; comp++) {
-        for (int i = 0; i < nx; i++) {
-            U[comp][i] = UInit[comp][i];
-        }
-    }
 }
 
 

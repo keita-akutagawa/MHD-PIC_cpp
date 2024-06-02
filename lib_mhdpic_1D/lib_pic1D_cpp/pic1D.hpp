@@ -8,8 +8,6 @@
 #include "boundary.hpp"
 
 
-using namespace PIC; 
-
 class PIC1D
 {
 private:
@@ -32,12 +30,12 @@ public:
     PIC1D() :
         particlesIon(totalNumIon), 
         particlesElectron(totalNumElectron), 
-        E(3, std::vector<double>(nx, 0.0)), 
-        B(3, std::vector<double>(nx, 0.0)), 
-        current(3, std::vector<double>(nx, 0.0)), 
-        tmpE(3, std::vector<double>(nx, 0.0)), 
-        tmpB(3, std::vector<double>(nx, 0.0)), 
-        tmpCurrent(3, std::vector<double>(nx, 0.0))
+        E(3, std::vector<double>(PIC::nx, 0.0)), 
+        B(3, std::vector<double>(PIC::nx, 0.0)), 
+        current(3, std::vector<double>(PIC::nx, 0.0)), 
+        tmpE(3, std::vector<double>(PIC::nx, 0.0)), 
+        tmpB(3, std::vector<double>(PIC::nx, 0.0)), 
+        tmpCurrent(3, std::vector<double>(PIC::nx, 0.0))
         {}
     
     virtual void initialize();
