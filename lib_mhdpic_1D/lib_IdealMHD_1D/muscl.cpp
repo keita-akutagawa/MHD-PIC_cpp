@@ -5,6 +5,8 @@
 #include "muscl.hpp"
 
 
+using namespace MHD;
+
 void MUSCL::getLeftComponent(
     const std::vector<double> q, 
     std::vector<double>& qLeft

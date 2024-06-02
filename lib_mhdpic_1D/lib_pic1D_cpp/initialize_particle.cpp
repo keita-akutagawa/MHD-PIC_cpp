@@ -3,6 +3,8 @@
 #include <cmath>
 
 
+using namespace PIC;
+
 void InitializeParticle::uniformForPositionX(
     int nStart, 
     int nEnd, 

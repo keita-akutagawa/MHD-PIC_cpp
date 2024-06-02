@@ -2,6 +2,8 @@
 #include "particle_push.hpp"
 
 
+using namespace PIC;
+
 void ParticlePush::pushVelocity(
     std::vector<Particle>& particlesIon, 
     std::vector<Particle>& particlesElectron, 

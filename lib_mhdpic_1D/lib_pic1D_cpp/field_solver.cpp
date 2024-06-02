@@ -1,6 +1,8 @@
 #include "field_solver.hpp"
 
 
+using namespace PIC;
+
 void FieldSolver::timeEvolutionB(
     std::vector<std::vector<double>>& B, 
     const std::vector<std::vector<double>>& E, 

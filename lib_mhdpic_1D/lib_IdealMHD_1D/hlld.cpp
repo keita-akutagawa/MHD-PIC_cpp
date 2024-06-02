@@ -6,6 +6,8 @@
 #include "hlld.hpp"
 
 
+using namespace MHD;
+
 inline double HLLD::sign(double x)
 {
     return (x > 0.0) - (x < 0.0);

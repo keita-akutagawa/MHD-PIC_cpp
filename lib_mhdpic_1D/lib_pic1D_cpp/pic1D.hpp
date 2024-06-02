@@ -8,6 +8,8 @@
 #include "boundary.hpp"
 
 
+using namespace PIC; 
+
 class PIC1D
 {
 private:

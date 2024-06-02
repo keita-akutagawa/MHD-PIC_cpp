@@ -4,6 +4,8 @@
 #include "calculate_half_components.hpp"
 
 
+using namespace MHD;
+
 Components::Components()
 {
     rho = std::vector<double>(nx, 0.0);

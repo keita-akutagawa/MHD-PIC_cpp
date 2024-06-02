@@ -2,6 +2,8 @@
 #include "const.hpp"
 
 
+using namespace MHD;
+
 void Boundary::periodicBoundary(
     std::vector<std::vector<double>>& U
 )

@@ -2,6 +2,8 @@
 #include "current_calculater.hpp"
 
 
+using namespace PIC;
+
 void CurrentCalculater::resetCurrent(
     std::vector<std::vector<double>>& current
 )

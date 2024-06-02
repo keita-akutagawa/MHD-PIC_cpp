@@ -3,6 +3,8 @@
 #include "pic1D.hpp"
 
 
+using namespace PIC;
+
 void PIC1D::oneStep()
 {
     fieldSolver.timeEvolutionB(B, E, dt/2.0);

@@ -8,6 +8,8 @@
 #include "idealMHD_1D.hpp"
 
 
+using namespace MHD;
+
 IdealMHD1D::IdealMHD1D()
 {
     U = std::vector(8, std::vector<double>(nx, 0.0));

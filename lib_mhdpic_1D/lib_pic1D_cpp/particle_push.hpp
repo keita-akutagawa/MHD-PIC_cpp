@@ -3,6 +3,8 @@
 #include "const.hpp"
 
 
+using namespace PIC; 
+
 class ParticlePush
 {
 private: 

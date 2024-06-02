@@ -1,6 +1,7 @@
 #ifndef PARTICLE_STRUCT_H
 #define PARTICLE_STRUCT_H
 
+
 struct Particle
 {
     double x;

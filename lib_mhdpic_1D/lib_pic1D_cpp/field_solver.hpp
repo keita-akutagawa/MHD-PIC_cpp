@@ -1,6 +1,9 @@
 #include <vector>
 #include "const.hpp"
 
+
+using namespace PIC; 
+
 class FieldSolver
 {
 private:
