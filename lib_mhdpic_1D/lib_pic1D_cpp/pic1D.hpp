@@ -28,8 +28,8 @@ private:
 
 public:
     PIC1D() :
-        particlesIon(totalNumIon), 
-        particlesElectron(totalNumElectron), 
+        particlesIon(PIC::totalNumIon), 
+        particlesElectron(PIC::totalNumElectron), 
         E(3, std::vector<double>(PIC::nx, 0.0)), 
         B(3, std::vector<double>(PIC::nx, 0.0)), 
         current(3, std::vector<double>(PIC::nx, 0.0)), 
