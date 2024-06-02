@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include <cmath>
+#include "const.hpp"
 #include "./lib_IdealMHD_1D/idealMHD_1D.hpp"
 #include "./lib_pic1D_cpp/pic1D.hpp"
 
@@ -29,6 +30,8 @@ private:
     FieldSolver picFieldSolver;
     CurrentCalculater picCurrentCalculater;
 
+    std::vector<double> interlockingFunction;
+
 public:
     MHDPIC1D() : 
     mhdU1(8, std::vector<double>(MHD::nx, 0.0)),
@@ -43,8 +46,18 @@ public:
     picCurrent(3, std::vector<double>(PIC::nx, 0.0)), 
     picTmpE(3, std::vector<double>(PIC::nx, 0.0)), 
     picTmpB(3, std::vector<double>(PIC::nx, 0.0)), 
-    picTmpCurrent(3, std::vector<double>(PIC::nx, 0.0))
-    {}
+    picTmpCurrent(3, std::vector<double>(PIC::nx, 0.0)), 
+
+    interlockingFunction(interfaceLength, 0.0)
+
+    {
+        for (int i = 0; interfaceLength; i++) {
+            interlockingFunction[i] = 0.5 * (
+                1.0 + std::cos(PI * (static_cast<double>(i) - 0.0) / interfaceLength)
+            );
+        }
+    }
+
 
     virtual void initialize();
 
