@@ -49,7 +49,7 @@ public:
     picTmpCurrent(3, std::vector<double>(PIC::nx, 0.0)), 
 
     interlockingFunction(interfaceLength, 0.0)
-
+    
     {
         for (int i = 0; interfaceLength; i++) {
             interlockingFunction[i] = 0.5 * (
